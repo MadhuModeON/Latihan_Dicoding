@@ -1,0 +1,81 @@
+span {
+    color: lightgreen;
+    background: black;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+main {
+    margin: 5px;
+    padding: 5px;
+}
+.boxquote {
+    min-height: 20px;
+    width: 100%;
+    border: 2px solid black;
+    text-align: center;
+    position: relative;
+}
+#aura h2 {
+    font-family: fantasy;
+    width: 100%;
+    background: linear-gradient(45deg, red, black);
+}
+[src*=auratom] {
+    border: 5px solid;
+    border-image: linear-gradient(45deg, red, black, red) 1;
+}
+[src*=ayoyono] {
+    border: 5px solid;
+    border-image: linear-gradient(45deg, purple, red, purple)1;
+}
+article {
+    box-shadow: 0px 4px 4px black;
+    padding: 5px;
+    margin: 5px;
+    & > article {
+        box-shadow: 0px 0px 8px black;
+    }
+}
+.important1 {
+    background: linear-gradient(45deg, red, blue);
+    box-shadow: 2px 2px 4px purple;
+}
+nav li{
+    display: none;
+    
+    &:hover {
+        font-weight: bold;
+    }
+    & a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.jumbotron {
+    text-align: center;
+    background: linear-gradient(45deg, blue, rgb(46, 189, 255));
+    width: 100%;
+    font-size: 20px;
+    min-height: 200px;
+    padding-top: 20px;
+    color:rgb(255, 255, 255);
+    text-shadow: 0px 6px 10px black;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin: 0px;
+}
+.navigasi {
+    all: revert;
+    background: rgb(87, 146, 255);
+    min-height:20px;
+    font-Size: 16px;
+    text-align: left;
+    border-radius: 3px;
+    box-shadow: 0px 2px 4px black;
+}
+.navigasi:hover nav li {
+        display: block;
+    }
